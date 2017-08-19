@@ -13,8 +13,8 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 app.get('/article-one',function(req,res){
-    res.send('article one is requested and will be served by ilakkiya');
-});
+    res.sendFile(path.join(__dirname, 'ui', 'article-one'));
+    });
 
 app.get('/article-two',function(req,res){
     res.send('article two is requested and will be served by ilakkiya');
