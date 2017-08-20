@@ -1,3 +1,5 @@
 console.log('Loaded!');
-var element=document.getElementById('main-text');
-element.innerHtml = 'i am the newest text';
+//to chnge the text inside the id of main-text
+var element=document.getElementById('main-text'
+);
+element.innerHtml = 'new text';
