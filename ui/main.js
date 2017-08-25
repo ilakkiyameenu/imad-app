@@ -28,7 +28,7 @@ var submit=gtElementById('submit_btn');
       var names=['ilakkiya','meenu','3rdname'];
       var list='';
       for( var i=0;i<names.length;i++){
-          list=='<li>'+names[i]'</li>';
+          list=='<li>'+names[i]+'</li>';
       }
       var ul=document.getElementById('unordered');
       ul.innerHTML=list;
