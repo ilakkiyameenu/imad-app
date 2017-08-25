@@ -21,15 +21,3 @@ button.onclick=function (){
     request.open('GET','http://ilakkiyameenu1997.imad.hasura-app.io/counter',true);
     request.send(null);
 };
-var submit=gtElementById('submit_btn');
-    submit.onclick=function(){
-      //make arequest to the server and send the name
-      //capture a list of names and render it
-      var names=['ilakkiya','meenu','3rdname'];
-      var list='';
-      for( var i=0;i<names.length;i++){
-          list='<li>'+names[i]'</li>';
-      }
-      var ul=document.getElementById('unordered');
-      ul.innerHTML=list;
-    };
