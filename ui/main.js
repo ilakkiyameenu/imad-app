@@ -21,8 +21,8 @@ button.onclick=function (){
     request.open('GET','http://ilakkiyameenu1997.imad.hasura-app.io/counter',true);
     request.send(null);
 };
-var submit=getElementById('submit_btn');
-    submit.onclick=function(){
+var submit=document.getElementById('submit_btn');
+submit.onclick=function(){
       //make arequest to the server and send the name
       //capture a list of names and render it
       var names=['ilakkiya','meenu','3rdname'];
