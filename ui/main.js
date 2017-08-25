@@ -1,7 +1,7 @@
 //counter code
 var button=document.getElementById('counter');
 button.onclick=function (){
-    //make a request to the counter endpoint
+    //create arequest variable
     var request= new XMLHttpRequest();
     
     //get the response and store it in a varible
@@ -17,6 +17,8 @@ button.onclick=function (){
       }
     };
     
-    //render the variable in the correct span
+    //make a request
+    request.open('GET','http://ilakkiyameenu1997.imad.hasura-app.io/counter',true);
+    request.send(null);
 
 };
