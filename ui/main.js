@@ -27,9 +27,8 @@ var submit=gtElementById('submit_btn');
       //capture a list of names and render it
       var names=['ilakkiya','meenu','3rdname'];
       var list='';
-      for( var i=0;i<names.length;i++)
-      {
-          list='<li>' + names[i] '</li>';
+      for( var i=0;i<names.length;i++){
+          list='<li>'+names[i]'</li>';
       }
       var ul=document.getElementById('unordered');
       ul.innerHTML=list;
