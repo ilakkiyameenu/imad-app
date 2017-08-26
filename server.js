@@ -89,9 +89,9 @@ app.get('/favicon.ico', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'favico.ico'));
 });
 var names=[];
-app.get('/submit-name/:name',function(req,res){
+app.get('/submit-name',function(req,res){//query parameter urlpattern=/submitname?name=ilakkiya
 //extract name from the request
-var name=req.params.name;
+var name=req.query.name;
 names.push(name);
 //JSON javascript object notation
 res.send(JSON.stringify(names));
