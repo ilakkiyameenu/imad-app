@@ -21,6 +21,8 @@ button.onclick=function (){
     request.open('GET','http://ilakkiyameenu1997.imad.hasura-app.io/counter',true);
     request.send(null);
 };
+var nameInput=document.getElementById('name');
+var namev=nameInput.value;
 var submit=document.getElementById('submit_btn');
 submit.onclick=function(){
       //make arequest to the server and send the name
