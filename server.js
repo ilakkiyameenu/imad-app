@@ -88,6 +88,14 @@ app.get('/ui/main.js', function (req, res) {
 app.get('/favicon.ico', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'favico.ico'));
 });
+app.get('/submit-name/:name',function(req,res){
+    //extract name from the request
+var name=req.params.name;
+names.push(name);
+//JSON javascript object notation
+res.send(JSON.stringify(names));
+
+});
 var counter =0;
 app.get('/counter',function(req,res){
     counter=counter+1;
