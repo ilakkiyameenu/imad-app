@@ -35,7 +35,7 @@ submit.onclick=function(){
     {
       //capture a list of names and render it
       var names=request.responseText;
-      names=JSON.parse(names);
+      names=JSON.parse(names);//to covert string back to js objects,here,an array
       var list='';
       for( var i=0;i<names.length;i++){
           list+='<li>'+names[i]+'</li>';
