@@ -73,7 +73,9 @@ var template=`<html>
             <div>
                 ${date.toDateString()}
             </div>
-            <h1>article one!!!</h1>
+            <h1>
+            ${heading}
+            </h1>
             <div>
             ${content}
             </div>
