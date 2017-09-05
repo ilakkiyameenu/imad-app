@@ -130,7 +130,7 @@ app.get('/counter',function(req,res){
 
 
 app.get('/articles/:articlename',function(req,res){
-pool.query("SELECT * FROM articles WHERE title= '"+req.params.articlename+"'",function(err,result){
+pool.query("SELECT * FROM articles WHERE title= $1",[req.params.articlename],function(err,result){
     if(err){
         res.status(500).send(err.toString());
     }
