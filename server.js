@@ -96,12 +96,12 @@ app.get('/test-db',function(req,res){
    //make a select request
    pool.query('SELECT * FROM test',function(err,res){
        if(err){
-           res.status(500).send(err.toString())
+           res.status(500).send(err.toString());
        }else
        {
            res.send(JSON.stringify(result));
        }
-   })
+   });
    //return the response
 });
 app.get('/ui/main.js', function (req, res) {
