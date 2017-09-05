@@ -13,44 +13,6 @@ var config={
 
 var app = express();
 app.use(morgan('combined'));
-var articles=
-{
-   'article-one' :{
-    title:'article one|ilakkiya meenu',
-    heading:'article one!!!',
-    date:' aug 18,2017',
-    content:  `  <p>
-                    this is the content for article one .this is the content for article one 
-                    .this is the content for article one .
-                </p>
-                <p>
-                    this is the content for article one .this is the content for article one 
-                    .this is the content for article one .
-                </p>
-                <p>
-                    this is the content for article one .this is the content for article one 
-                    .this is the content for article one .
-                </p>`
-    },
-    'article-two':{
-    title:'article two|ilakkiya meenu',
-    heading:'article two!!!',
-    date:' aug 15,2017',
-    content:  `  <p>
-                    this is the content for article two.this is the content for article one 
-                    .this is the content for article two .
-                </p>`
-    },
-    'article-three':{
-    title:'article three|ilakkiya meenu',
-    heading:'article three!!!',
-    date:' aug 1,2017',
-    content:  `  <p>
-                    this is the content for article three.this is the content for article three 
-                    .this is the content for article three .
-                </p>`
-    }
-};
 function createTemplate(data)
 {
 var title=data.title;
